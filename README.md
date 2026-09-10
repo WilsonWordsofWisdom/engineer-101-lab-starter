@@ -17,23 +17,14 @@ Starter repository for the pair-programming lab sessions. Clone this repo, open 
 - **Lab 2.2** — Pull requests & Driver/Navigator review (`.github/PULL_REQUEST_TEMPLATE.md`)
 - **Lab 2.3** — Resolving merge conflicts
 
-### Unit 3 — Building the API
-- **Lab 3.1** — Running the FastAPI app locally (`app/main.py`)
-- **Lab 3.2** — Extending the API endpoints
+### Unit 3 — Databases
+- **Lab 3.1** — Postgres schema design (`db/schema.sql`)
+- **Lab 3.2** — Row-Level Security policies (`db/rls_policies.sql`)
+- **Lab 3.3** — ERD modeling with `schema.drawio`
 
 ### Unit 4 — Containers Basics
 - **Lab 4.1** — Docker fundamentals & the `Dockerfile` (`app/Dockerfile`)
 - **Lab 4.2** — Docker Compose basics (`docker-compose.yml`)
-
-### Unit 5 — Databases
-- **Lab 5.1** — Postgres schema design (`db/schema.sql`)
-- **Lab 5.2** — Row-Level Security policies (`db/rls_policies.sql`)
-- **Lab 5.3** — ERD modeling with `schema.drawio`
-
-### Unit 6 — Multi-Container Apps
-- **Lab 6.1** — Wiring the API to Postgres
-- **Lab 6.2** — Environment variables & secrets (`.env`, `.gitignore`)
-- **Lab 6.3** — Adding a Redis cache service to `docker-compose.yml`
 
 ## Quick Command Reference
 
@@ -47,12 +38,6 @@ Starter repository for the pair-programming lab sessions. Clone this repo, open 
 | `git restore <file>` | Discard unstaged changes to a file |
 | `git reset --soft HEAD~1` | Undo the last commit, keep changes staged |
 | `git checkout -b <branch>` | Create and switch to a new branch |
-
-### App (local)
-| Command | Purpose |
-|---|---|
-| `pip install -r app/requirements.txt` | Install Python dependencies |
-| `uvicorn app.main:app --reload` | Run the FastAPI app locally with hot reload |
 
 ### Docker
 | Command | Purpose |
@@ -69,5 +54,6 @@ Starter repository for the pair-programming lab sessions. Clone this repo, open 
 | `psql -f db/rls_policies.sql` | Apply Row-Level Security policies |
 
 ## Endpoints
+Once the stack is running via `docker compose up -d`, hit these on the `web` service:
 - `GET /` — welcome/status message
 - `GET /health` — health check

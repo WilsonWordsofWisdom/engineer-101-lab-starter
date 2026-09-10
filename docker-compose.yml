@@ -12,5 +12,3 @@ services:
     environment:
       - ENV=development
       - PORT=8000
-
-# LAB 6.3 TASK: Ask Claude Code to add a secondary 'cache' service running 'redis:alpine' below!
