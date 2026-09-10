@@ -1,4 +1,4 @@
--- PostgreSQL Schema Template for Lab 5.1
+-- PostgreSQL Schema Template for Lab 3.1
 CREATE TABLE IF NOT EXISTS users (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     name VARCHAR(255) NOT NULL,

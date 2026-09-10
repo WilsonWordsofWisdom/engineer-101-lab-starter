@@ -1,4 +1,4 @@
--- Row-Level Security (RLS) Policies for Lab 5.2
+-- Row-Level Security (RLS) Policies for Lab 3.2
 -- Demonstrates user isolation: each user can only see/modify their own tasks.
 
 ALTER TABLE users ENABLE ROW LEVEL SECURITY;
@@ -29,5 +29,5 @@ CREATE POLICY tasks_delete_own ON tasks
     FOR DELETE
     USING (user_id = current_setting('app.current_user_id', true)::UUID);
 
--- Lab usage: set the session's current user before querying, e.g.
+-- Lab 3.2 usage: set the session's current user before querying, e.g.
 --   SET app.current_user_id = 'a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11';
