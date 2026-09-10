@@ -1,0 +1,7 @@
+Welcome to Engineer 101 for Vibe Coders!
+
+This starter file is used in Lab 1.1 and Lab 1.2 to practice:
+1. Checking repository status (`git status`) and inspecting unstaged diffs (`git diff`).
+2. Staging and committing clean milestones with Claude Code (`git commit`).
+3. Discarding playground mistakes (`git restore welcome.txt`).
+4. Undoing commits safely (`git reset --soft HEAD~1`).

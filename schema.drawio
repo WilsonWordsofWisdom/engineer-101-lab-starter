@@ -1,0 +1,19 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ERD - Lab 5.3" id="lab-5-3-erd">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="users" value="users&#10;--&#10;id: UUID (PK)&#10;name: VARCHAR&#10;email: VARCHAR (UNIQUE)&#10;created_at: TIMESTAMPTZ" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="120" y="120" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="tasks" value="tasks&#10;--&#10;id: UUID (PK)&#10;title: VARCHAR&#10;status: VARCHAR&#10;user_id: UUID (FK -&gt; users.id)&#10;created_at: TIMESTAMPTZ" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="440" y="120" width="220" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" style="edgeStyle=entityRelationEdgeStyle;html=1;" edge="1" parent="1" source="users" target="tasks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

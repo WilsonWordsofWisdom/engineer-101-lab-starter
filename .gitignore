@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Node / Web
+node_modules/
+npm-debug.log*
+
+# Docker & Logs
+*.log
+.docker/
+
+# Security & Secrets
+.env
+.env.local
+*.pem
+*.key
+secrets/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store

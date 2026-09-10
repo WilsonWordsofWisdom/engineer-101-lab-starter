@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+    environment:
+      - ENV=development
+      - PORT=8000
+
+# LAB 6.3 TASK: Ask Claude Code to add a secondary 'cache' service running 'redis:alpine' below!
